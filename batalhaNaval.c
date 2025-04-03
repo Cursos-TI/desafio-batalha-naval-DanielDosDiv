@@ -51,6 +51,17 @@
             
             MatrizTabuleiro[j][7] = Navio2[i];
         }
+        // diagonal esquerda para a direita
+        for (int i = 2 ,j = 3; i < 5; i++ , j++)
+        {
+            MatrizTabuleiro[i][j] = 3;
+        }
+        // Diaogal direita para esquerda
+        for (int i = 3 ,j = 9; i < 6; i++ , j--)
+        {
+            MatrizTabuleiro[i][j] = 3;
+        }
+        
         
         // Imprimir o tabuleiro
         for (int i = 0; i < 10; i++) {
